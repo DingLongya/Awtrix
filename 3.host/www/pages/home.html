@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-16">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>AWTRIX</title>
+
+    <!-- Favicon-->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <script src="https://kit.fontawesome.com/f57ed06236.js" crossorigin="anonymous?ver=1641453180850"></script>
+
+
+    <!-- Bootstrap Core Css -->
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Colorpicker Css -->
+    <link href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+    <!-- Multi Select Css -->
+    <link href="../plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="../plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../css/themes/all-themes.css" rel="stylesheet" />
+
+    <!-- awtrix Interface -->
+    <script src="../js/awtrix_ws.js?ver=1641453180850"></script>
+
+    <style type="text/css" media="screen">
+        #editor {
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="theme-blue-grey" id="body">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING..">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-logo" </a>
+                    <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                    <a href="javascript:void(0);" class="bars"></a>
+                    <a id="title" class="navbar-brand" href="../../pages/home.html">AWTRIX</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:void(0);" id="prevapp" data-toggle="tooltip" data-placement="top" title="Switch to previous app"><i class="material-icons">arrow_back_ios</i></a></li>
+                    <li><a href="javascript:void(0);" id="nextapp" data-toggle="tooltip" data-placement="top" title="Switch to next app"><i class="material-icons">arrow_forward_ios</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active">
+                        <a href="../pages/home.html">
+                            <i class="awesomeicon fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/myApps.html">
+                            <i class="awesomeicon fas fa-th"></i>
+                            <span>My Apps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/appstore.html">
+                            <i class="awesomeicon fas fa-store"></i>
+                            <span>Appstore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-icons"></i>
+                            <span>Extras</span>
+                        </a>
+                        <ul class="ml-menu">
+
+                            
+                            <li>
+                                <a href="../pages/arcade.html">
+                                    <i class="awesomeiconsmall fas fa-gamepad"></i>
+                                    <span>Arcade</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/icons.html">
+                                    <i class="awesomeiconsmall fas fa-grin-wink"></i>
+                                    <span>Icon Database</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/newIcon.html">
+                                    <i class="awesomeiconsmall fas fa-grin-stars"></i>
+                                    <span>AWTRIXER</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-cogs"></i>
+                            <span>Settings</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../pages/hostsettings.html">
+                                    <i class="awesomeiconsmall fas fa-server"></i>
+                                    <span>Host</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/premium.html">
+                                    <i class="awesomeiconsmall fas fa-trophy"></i>
+                                    <span>Premium</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-signal"></i>
+                            <span>Status</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../pages/host.html">
+                                    <i class="awesomeiconsmall fas fa-server"></i>
+                                    <span>Host</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/matrix.html">
+                                    <i class="awesomeiconsmall fas fa-microchip"></i>
+                                    <span>Matrix</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/log.html">
+                                    <i class="awesomeiconsmall fas fa-clipboard-list"></i>
+                                    <span>Log</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header">OTHERS</li>
+                    <li>
+                        <a href="../pages/about.html" target="_blank">
+                            <i class="awesomeicon fas fa-address-card"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/terms.html" target="_blank">
+                            <i class="awesomeicon fas fa-user-shield"></i>
+                            <span>Policies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-heart"></i>
+                            <span>Support AWTRIX</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="https://paypal.me/blueforcer" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-paypal"></i>
+                                    <span>Donate</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.patreon.com/blueforcer" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-patreon"></i>
+                                    <span>Patreon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blueforcer.de/shop/" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-shopping-basket"></i>
+                                    <span>Shop</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-external-link-alt"></i>
+                            <span>Links</span>
+                        </a>
+                        <ul class="ml-menu">
+
+                            <li>
+                                <a href="https://awtrixdocs.blueforcer.de" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-book"></i>
+                                    <span>Documentation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://forum.blueforcer.de" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-wpforms"></i>
+                                    <span>Forum</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/VUNc99B" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-discord"></i>
+                                    <span>Discord</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://poeditor.com/join/project/OT89XVkSEm" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-language"></i>
+                                    <span>Translation</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li id="critical" hidden>
+                        <a href="../pages/critical.html">
+                            <i class="awesomeicon fas fa-exclamation-triangle" style="color: red;"></i>
+                            <span>Critical Errors</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2018 - 2020 <a href="https://blueforcer.de/">Blueforcer</a>
+                </div>
+                <div class="version">
+                    <b>Version: </b> <i id="serverversion">110719</i>
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+    </section>
+    <!-- #END# Left Sidebar -->
+    <!-- Right Sidebar -->
+
+    <!-- #END# Right Sidebar -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>Dashboard</h2>
+            </div>
+            <!-- Widgets -->
+            <div class="row clearfix">
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box-3 bg-cyan hover-expand-effect" onclick="javascript:location.href='/pages/appstore.html'">
+                        <div class="icon">
+                            <i class="material-icons">system_update</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">APP UPDATES</div>
+                            <div id="appupdates" class="number count-to" data-from="0" data-to="3" data-speed="1000" data-fresh-interval="20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box-3 bg-light-green hover-expand-effect" onclick="javascript:location.href='/pages/myApps.html'">
+                        <div class="icon">
+                            <i class="material-icons">apps</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">CURRENT APP</div>
+                            <div id="uptime" class="number">02:59</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box-3 bg-orange hover-expand-effect" onclick="javascript:location.href='/pages/hostsettings.html#matrixconnection'">
+                        <div class="icon">
+                            <i class="material-icons">grid_on</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">MATRIX</div>
+                            <div id="matrixconnected" class="number">CONNECTED</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box-3 bg-yellow hover-expand-effect" onclick="javascript:location.href='/pages/premium.html'">
+                        <div class="icon">
+                            <i class="material-icons">whatshot</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">PREMIUM</div>
+                            <div id="premium" class="number">CONNECTED</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Widgets -->
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                API TESTER
+                                <br>
+                                <br>
+                            </h2>
+                            <div class="btn-group" role="group">
+                                <button type="button" id="modebasics" class="btn btn-primary  waves-effect">BASICS</button>
+                                <button type="button" id="modeapp" class="btn btn-primary  waves-effect">NOTIFY</button>
+                                <button type="button" id="modedraw" class="btn btn-primary  waves-effect">DRAW</button>
+                                <button type="button" id="modesettings" class="btn btn-primary  waves-effect">SETTINGS</button>
+
+
+                            </div>
+                            <label for="url"> </label>
+                            <span id="url" class="label bg-blue">New</span>
+                        </div>
+                        <div class="body">
+                            <div class="form-group">
+                                <div id="editor"></div>
+                                <br>
+                                <button type="button" id="btnshow" class="btn btn-lg btn-primary  waves-effect">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+
+                        <div class="header">
+
+                            <div class="body">
+                                <div class="form-group">
+                                    <label for="terminal">Terminal</label>
+                                    <input style="background:rgb(97, 97, 97); color: rgb(255, 255, 255)" type="email" class="form-control" id="terminal">
+                                    <button type="button" id="terminalsend" class="btn btn-primary  waves-effect">Execute</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="mdModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="alertModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body" id="alertModalBody">
+
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-primary" href="#" id="goToButton" role="button">Link</a>
+                                <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/js/service-worker.js')
+                .then(function(reg) {}).catch(function(err) {});
+        }
+    </script>
+
+    <script src="..\js\addons\ace\ace.js" type="text/javascript" charset="utf-8?ver=1641453180850"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/dracula");
+        editor.session.setMode("ace/mode/json");
+
+        function setText(text) {
+            editor.session.setValue(text)
+        };
+
+        function getText() {
+            return editor.getSession().getValue();
+        };
+    </script>
+
+
+    <!-- Jquery Core Js -->
+    <script src="../plugins/jquery/jquery.min.js?ver=1641453180850"></script>
+
+
+
+    <!-- Bootstrap Core Js -->
+    <script src="../plugins/bootstrap/js/bootstrap.js?ver=1641453180850"></script>
+    <!-- SweetAlert Plugin Js -->
+    <script src="../js/sweetalert.min.js?ver=1641453180850"></script>
+    <!-- Select Plugin Js -->
+    <script src="../plugins/bootstrap-select/js/bootstrap-select.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Notify Plugin Js -->
+    <script src="../plugins/bootstrap-notify/bootstrap-notify.js?ver=1641453180850"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js?ver=1641453180850"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../plugins/node-waves/waves.js?ver=1641453180850"></script>
+
+    <!-- Demo Js -->
+    <script src="../js/admin.js?ver=1641453180850"></script>
+    <script src="../js/others.js?ver=1641453180850"></script>
+    <script src="../js/dialogs.js?ver=1641453180850"></script>
+</body>
+
+
+<script type="text/javascript">
+    awtrix_connect("/ws");
+
+    function ShowMessage(titel, body, btn, link) {
+
+        $('#alertModalLabel').html(titel);
+        $('#alertModalBody').html(body);
+
+        if (typeof btn !== "undefined") {
+            $('#goToButton').html(btn);
+            document.getElementById('goToButton').href = link;
+        } else {
+            $('#goToButton').hide();
+        }
+        $('#mdModal').modal('show')
+    };
+</script>
+
+</html>

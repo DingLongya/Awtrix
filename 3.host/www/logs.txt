@@ -1,0 +1,42 @@
+Export from 05/05/2020
+
+21:28:15      Loading settings
+21:28:15      Unzip www folder
+21:28:23      Unzipping complete
+ 
+AWTRIX by Blueforcer
+starting version Beta 05520
+ 
+Working directory:
+C:\Users\Stephan\DOCUME~1\GitHub\awtrix\Objects
+ 
+http://172.16.43.157:7000
+starting...
+21:28:23      Connecting with WiFi
+21:28:24      Checking Premium key ...
+21:28:26      Show Bootanimation
+21:28:26      Premium Key is valid!
+00-05-9A-3C-7A-00
+Trying to load BilibiliOnline.jar
+Start loading classes...
+Loading jar finished
+Initialize found!
+Trying to load Crypto.jar
+Start loading classes...
+Loading jar finished
+Initialize found!
+Trying to load PeopleInSpace.jar
+Start loading classes...
+Loading jar finished
+Initialize found!
+Trying to load Time.jar
+Start loading classes...
+Loading jar finished
+Initialize found!
+Active plugins: 4
+21:28:32      Updating PeopleInSpace
+21:28:33      Updating BilibiliOnline
+21:28:34      Updating Crypto
+21:28:34      -----------------------------
+21:28:34      Awtrix Ready - Start
+21:28:34      -----------------------------

@@ -1,0 +1,875 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-16">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>AWTRIX 2</title>
+
+    <!-- Favicon-->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+
+
+    <script src="https://kit.fontawesome.com/f57ed06236.js" crossorigin="anonymous?ver=1641453180850"></script>
+
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Colorpicker Css -->
+    <link href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+    <!-- Multi Select Css -->
+    <link href="../plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Wait Me Css -->
+    <link href="../plugins/waitme/waitMe.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="../plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../css/themes/all-themes.css" rel="stylesheet" />
+
+    <!-- awtrix Interface -->
+    <script src="../js/awtrix_ws.js?ver=1641453180850"></script>
+    <style type="text/css" media="screen">
+        #editor {
+            height: 200px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="theme-blue-grey" id="body">
+
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING..">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a id="title" class="navbar-brand" href="../../pages/home.html">AWTRIX</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="pull-right"><a href="javascript:void(0);" id="save"><i
+                                class="material-icons">save</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li>
+                        <a href="../pages/home.html">
+                            <i class="awesomeicon fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/myApps.html">
+                            <i class="awesomeicon fas fa-th"></i>
+                            <span>My Apps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/appstore.html">
+                            <i class="awesomeicon fas fa-store"></i>
+                            <span>Appstore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-icons"></i>
+                            <span>Extras</span>
+                        </a>
+                        <ul class="ml-menu">
+                            
+                            <li>
+                                <a href="../pages/arcade.html">
+                                    <i class="awesomeiconsmall fas fa-gamepad"></i>
+                                    <span>Arcade</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/icons.html">
+                                    <i class="awesomeiconsmall fas fa-grin-wink"></i>
+                                    <span>Icon Database</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/newIcon.html">
+                                    <i class="awesomeiconsmall fas fa-grin-stars"></i>
+                                    <span>AWTRIXER</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-cogs"></i>
+                            <span>Settings</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../pages/hostsettings.html">
+                                    <i class="awesomeiconsmall fas fa-server"></i>
+                                    <span>Host</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="../pages/premium.html">
+                                    <i class="awesomeiconsmall fas fa-trophy"></i>
+                                    <span>Premium</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-signal"></i>
+                            <span>Status</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../pages/host.html">
+                                    <i class="awesomeiconsmall fas fa-server"></i>
+                                    <span>Host</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/matrix.html">
+                                    <i class="awesomeiconsmall fas fa-microchip"></i>
+                                    <span>Matrix</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/log.html">
+                                    <i class="awesomeiconsmall fas fa-clipboard-list"></i>
+                                    <span>Log</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header">OTHERS</li>
+                    <li>
+                        <a href="../pages/about.html" target="_blank">
+                            <i class="awesomeicon fas fa-address-card"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/terms.html" target="_blank">
+                            <i class="awesomeicon fas fa-user-shield"></i>
+                            <span>Policies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-heart"></i>
+                            <span>Support AWTRIX</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="https://paypal.me/blueforcer" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-paypal"></i>
+                                    <span>Donate</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.patreon.com/blueforcer" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-patreon"></i>
+                                    <span>Patreon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blueforcer.de/shop/" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-shopping-basket"></i>
+                                    <span>Shop</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-external-link-alt"></i>
+                            <span>Links</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="https://awtrixdocs.blueforcer.de" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-book"></i>
+                                    <span>Documentation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://forum.blueforcer.de" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-wpforms"></i>
+                                    <span>Forum</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/VUNc99B" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-discord"></i>
+                                    <span>Discord</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://poeditor.com/join/project/OT89XVkSEm" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-language"></i>
+                                    <span>Translation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2018 - 2020 <a href="https://blueforcer.de/">Blueforcer</a>
+                </div>
+                <div class="version">
+                    <b>Version: </b> <i id="serverversion">110719</i>
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Color Pickers -->
+            <div class="row clearfix">
+                <!-- #END# Color Pickers -->
+                <!-- Masked Input -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>
+                                    Premium
+                                    <small>More functions for your support</a></small>
+                                </h2>
+
+                                <ul class="header-dropdown m-r--5">
+                                    <button type="button" id="removepremium" class="btn btn-danger" hidden>Remove Premium</button>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="text-center" id="keybutton">
+                                    <button class="btn btn-primary waves-effect" id="newkey" hidden>I HAVE A KEY!</button>
+                                    <br>
+                                    <br>
+                                    <a target="_blank" href="https://awtrixdocs.blueforcer.de/#/en-en/premium">What is this?</a>
+                                </div>
+                                <div class="panel-group" id="premiumsection" role="tablist" aria-multiselectable="true" hidden>
+                                    <div class="panel panel-col-green">
+                                        <div class="panel-heading" role="tab" id="headingOne_17">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapseOne_17" aria-expanded="true" aria-controls="collapseOne_17">
+                                                    <i class="mdi mdi-cloud"></i> AWTRIX CLOUD
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne_17" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_17">
+                                            <div class="panel-body">
+                                                <label for="cloud">ACTIVE</label>
+                                                <div class="switch">
+                                                    <label><input type="checkbox" id="cloud"><span
+                                                    class="lever switch-col-green"></span></label>
+                                                </div>
+                                                <br>
+                                                <div class="col-md-8">
+                                                    <div class="alert alert-success" id="cloudtoken">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button class="btn btn-lg btn-danger waves-effect" id="revoke" hidden>Revoke key</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-col-red">
+                                        <div class="panel-heading" role="tab" id="headingTwo_17">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapseTwo_17" aria-expanded="false" aria-controls="collapseTwo_17">
+                                                    <i class="mdi mdi-phone"></i> Fritz!Box Call Monitor
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo_17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo_17">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-sm-1">
+
+                                                        <label for="fritzcaller">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="fritzcaller"><span
+                                                            class="lever switch-col-red"></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 masked-input">
+                                                        <label for="bottoken">Fritz!Box IP</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="text" id="fritzip" class="form-control" placeholder="192.168.178.1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <label for="editor">Phonebook editor</label>
+                                                        <div id="editor"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="panel panel-col-blue">
+                                        <div class="panel-heading" role="tab" id="headingThree_17">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapseThree_17" aria-expanded="false" aria-controls="collapseThree_17">
+                                                    <i class="mdi mdi-bell-sleep"></i> Pushover
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree_17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree_17">
+                                            <div class="panel-body">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-1">
+                                                        <label for="pushoveractive">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="pushoveractive"><span
+                                                            class="lever switch-col-blue"></span></label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <label for="POmail">E-Mail</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="text" id="pomail" class="form-control" placeholder="Enter your Pushover email">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="POpass">Password</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="password" id="popass" class="form-control" placeholder="Enter your Pushover password">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-col-amber">
+                                        <div class="panel-heading" role="tab" id="headingFive_17">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapseFive_17" aria-expanded="false" aria-controls="collapseFive_17">
+                                                    <i class="mdi mdi-sleep"></i> Sleep Mode
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFive_17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive_17">
+                                            <div class="panel-body">
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-11 col-md-1 col-lg-1">
+                                                        <label for="sleepactive">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="sleepactive"><span
+                                                            class="lever switch-col-amber"></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
+                                                        <label for="sleepactive">Sleep when dark</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="sleepatdark"><span
+                                                            class="lever switch-col-blue-blue"></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2" id="sleepluxform" hidden>
+                                                        <label for="sleepapp">Sleep Lux</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="number" id="sleeplux" min="0" max="1000" class="form-control" placeholder="5">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2 masked-input" id="sleepatform">
+                                                        <label for="sleepend">Sleep at</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                        <i class="material-icons">access_time</i>
+                                                    </span>
+                                                            <div class="form-line">
+                                                                <input type="text" class="form-control time24" id="sleepstart" value="23:00" placeholder="Ex: 23:00">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-2 col-md-2 col-lg-2 masked-input" id="wakeupform">
+                                                        <label for="sleepend">WakeUp at</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                        <i class="material-icons">access_time</i>
+                                                    </span>
+                                                            <div class="form-line">
+                                                                <input type="text" class="form-control time24" id="sleepend" value="05:00" placeholder="Ex: 05:00">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
+                                                        <label for="sleepapp">Sleep App</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="text" id="sleepapp" class="form-control" placeholder="Time">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-1 col-lg-1">
+                                                        <label for="sleepapp">Brightness</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="number" id="sleepbrightness" min="0" max="100" class="form-control" placeholder="5">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
+                                                        <label for="sleepactive">No Switch Animation</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="nosleepswitch"><span
+                                                            class="lever switch-col-blue-blue"></span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-col-lime">
+                                        <div class="panel-heading" role="tab" id="alarmclock">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapsealarmclock" aria-expanded="false" aria-controls="collapsealarmclock">
+                                                    <i class="mdi mdi-alarm"></i>  Alarm Clock
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapsealarmclock" class="panel-collapse collapse" role="tabpanel" aria-labelledby="alarmclock">
+                                            <div class="panel-body">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-1">
+                                                        <label for="alarmenabled">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="alarmenabled"><span
+                                                            class="lever switch-col-lime"></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 masked-input">
+                                                        <label for="alarmtime">Alarm time</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                        <i class="material-icons">access_time</i>
+                                                    </span>
+                                                            <div class="form-line">
+                                                                <input type="text" class="form-control time24" id="alarmtime" value="07:00" placeholder="Ex: 07:00">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="alarmfile">Icon</label>
+                                                        <div class="input-group">
+                                                            <div class="form-line">
+                                                                <input type="number" id="alarmicon" class="form-control" min="0" value="944">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="alarmduration">Duration</label>
+                                                        <div class="input-group">
+                                                            <div class="form-line">
+                                                                <input type="number" id="alarmduration" class="form-control" value="20">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="alarmfile">Soundfile</label>
+                                                        <div class="input-group">
+                                                            <div class="form-line">
+                                                                <input type="number" id="alarmfile" class="form-control" min="0" value="10">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-col-teal">
+                                        <div class="panel-heading" role="tab" id="yeelight">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapseyeelight" aria-expanded="false" aria-controls="collapseyeelight">
+                                                    <i class="mdi mdi-lightbulb-on"></i>Yeelight
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseyeelight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="yeelight">
+                                            <div class="panel-body">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-1">
+                                                        <label for="yeelightenabled">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="yeelightenabled"><span
+                                                            class="lever switch-col-teal"></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 masked-input">
+                                                        <label for="bottoken">IP Address</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="text" id="yeelightip" class="form-control" placeholder="192.168.178.15">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-col-deep-purple">
+                                        <div class="panel-heading" role="tab" id="yeelight">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapseartnet" aria-expanded="false" aria-controls="collapseyeelight">
+                                                    <i class="mdi mdi-lightbulb-on"></i>E1.33
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseartnet" class="panel-collapse collapse" role="tabpanel" aria-labelledby="artnet">
+                                            <div class="panel-body">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-1">
+                                                        <label for="acnactive">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="acnactive"><span
+                                                            class="lever switch-col-deep-purple"></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1" hidden>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="artnet" value="option1" checked>
+                                                            <label class="form-check-label" for="artnet">ArtNet</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="e131" value="option2">
+                                                            <label class="form-check-label" for="e131">E1.31</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="panel panel-col-cyan">
+                                        <div class="panel-heading" role="tab" id="alexa1">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapsealexa" aria-expanded="false" aria-controls="collapsealexa">
+                                                    <i class="mdi mdi-amazon-alexa"></i> Alexa
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapsealexa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="alexa">
+                                            <div class="panel-body">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-1">
+                                                        <label for="alexaactive">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="alexaactive"><span
+                                                            class="lever switch-col-deep-purple"></span></label>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <label for="alexaport">Listenport</label>
+                                                        <div class="input-group">
+                                                            <div class="form-line">
+                                                                <input type="number" id="alexaport" class="form-control" placeholder="80">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-1">
+                                                        <br>
+                                                        <button class="btn btn-primary waves-effect" id="pairing" hidden>Pairing</button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="panel panel-col-blue-grey">
+                                        <div class="panel-heading" role="tab" id="headingFour_17">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapseFour_17" aria-expanded="false" aria-controls="collapseFour_17">
+                                                    <i class="material-icons">sms</i> Telegram
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour_17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour_17">
+                                            <div class="panel-body">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-1">
+                                                        <label for="telegram">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="telegram"><span
+                                                                    class="lever switch-col-blue-grey"></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="bottoken">Bottoken</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="text" id="bottoken" class="form-control" placeholder="Enter your Token">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="chatid">Chat ID</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="text" id="chatid" class="form-control" placeholder="" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button class="btn btn-lg btn-danger waves-effect" id="resetchat" hidden>Reset ChatID</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <div class="panel panel-col-deep-orange">
+                                        <div class="panel-heading" role="tab" id="python">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#premiumsection" href="#collapsepython" aria-expanded="false" aria-controls="collapsealexa">
+                                                    <i class="mdi mdi-language-python"></i> Python Apps
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapsepython" class="panel-collapse collapse" role="tabpanel" aria-labelledby="python">
+                                            <div class="panel-body">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-1">
+                                                        <label for="pythonactive">ACTIVE</label>
+                                                        <div class="switch">
+                                                            <label><input type="checkbox" id="pythonactive"><span
+                                                            class="lever switch-col-deep-purple"></span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                </div>
+                            </div>
+                            <div class="text-center"> 
+                                <b></b><a target="_blank" href="https://blueforcer.de/shop/mein-konto/license-keys/">Manage my premium key</a></b>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        function ShowMessage(titel, body, btn, link) {
+            $('#alertModalLabel').html(titel);
+            $('#alertModalBody').html(body);
+            if (typeof btn !== "undefined") {
+                $('#goToButton').html(btn);
+                document.getElementById('goToButton').href = link;
+            } else {
+                $('#goToButton').hide();
+            }
+            $('#mdModal').modal('show')
+        };
+
+
+        awtrix_connect("/premium/ws");
+    </script>
+
+    <script>
+        window.onload = function() {
+            console.log('Dokument geladen');
+
+
+        }
+    </script>
+
+    <script src="..\js\addons\ace\ace.js" type="text/javascript" charset="utf-8?ver=1641453180850"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/text");
+
+        function setText(text) {
+            editor.session.setValue(text)
+        };
+
+        function getText() {
+            return editor.getSession().getValue();
+        };
+    </script>
+
+
+
+    <!-- Jquery Core Js -->
+    <script src="../plugins/jquery/jquery.min.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="../plugins/bootstrap/js/bootstrap.js?ver=1641453180850"></script>
+
+    <!-- Jquery Validation Plugin Css -->
+    <script src="../plugins/jquery-validation/jquery.validate.js?ver=1641453180850"></script>
+
+    <!-- JQuery Steps Plugin Js -->
+    <script src="../plugins/jquery-steps/jquery.steps.js?ver=1641453180850"></script>
+    <script src="../js/form-wizard.js?ver=1641453180850"></script>
+
+
+
+    <!-- Select Plugin Js -->
+    <script src="../plugins/bootstrap-select/js/bootstrap-select.js?ver=1641453180850"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Colorpicker Js -->
+    <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js?ver=1641453180850"></script>
+
+
+    <!-- Input Mask Plugin Js -->
+    <script src="../plugins/jquery-inputmask/jquery.inputmask.bundle.js?ver=1641453180850"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="../plugins/multi-select/js/jquery.multi-select.js?ver=1641453180850"></script>
+
+    <!-- Jquery Spinner Plugin Js -->
+    <script src="../plugins/jquery-spinner/js/jquery.spinner.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.js?ver=1641453180850"></script>
+
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../plugins/node-waves/waves.js?ver=1641453180850"></script>
+    <!-- Bootstrap Notify Plugin Js -->
+    <script src="../plugins/bootstrap-notify/bootstrap-notify.js?ver=1641453180850"></script>
+    <!-- SweetAlert Plugin Js -->
+    <script src="../js/sweetalert.min.js?ver=1641453180850"></script>
+    <!-- Custom Js -->
+    <script src="../js/admin.js?ver=1641453180850"></script>
+    <script src="../js/dialogs.js?ver=1641453180850"></script>
+
+
+    <!-- Demo Js -->
+    <script src="../js/others.js?ver=1641453180850"></script>
+    <script src="../js/Settings.js?ver=1641453180850"></script>
+
+    <!-- Autosize Plugin Js -->
+    <script src="../plugins/autosize/autosize.js?ver=1641453180850"></script>
+</body>
+
+</html>

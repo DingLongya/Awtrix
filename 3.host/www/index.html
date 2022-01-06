@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-16">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- awtrix Interface -->
+    <script src="js/awtrix_ws.js"></script>
+    <title>AWTRIX Login</title>
+</head>
+
+<body id="body">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id='login'>
+        <h1>AWTRIX 2<span class='orangestop'>.</span>0</h1>
+        <span class='input'>
+      <span class='icon username-icon fontawesome-lock'></span>
+        <input type='password' name="password" id='password' class='password' placeholder='password'></span>
+        <div class='divider'></div>
+        <div>
+
+            <button id="btnsign">Login</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            awtrix_connect("/login/ws");
+        });
+    </script>
+</body>
+
+</html>

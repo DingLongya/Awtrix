@@ -1,0 +1,811 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-16">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>AWTRIX 2</title>
+
+    <!-- Favicon-->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <script src="https://kit.fontawesome.com/f0b531a5b8.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <link href="../css/dropzone.css" rel="stylesheet">
+
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Colorpicker Css -->
+    <link href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+    <!-- Multi Select Css -->
+    <link href="../plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="../plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+
+    <script src="../js/dropzone.js?ver=1641453180850"></script>
+
+    <!-- Custom Css -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../css/themes/all-themes.css" rel="stylesheet" />
+
+    <!-- awtrix Interface -->
+    <script src="../js/awtrix_ws.js?ver=1641453180850"></script>
+
+</head>
+
+<body class="theme-blue-grey" id="body">
+
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING..">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a id="title" class="navbar-brand" href="../../pages/home.html">AWTRIX</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="pull-right"><a href="javascript:void(0);" id="save" data-toggle="tooltip" data-placement="top" title="Save"><i
+                                class="material-icons">save</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li>
+                        <a href="../pages/home.html">
+                            <i class="awesomeicon fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/myApps.html">
+                            <i class="awesomeicon fas fa-th"></i>
+                            <span>My Apps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/appstore.html">
+                            <i class="awesomeicon fas fa-store"></i>
+                            <span>Appstore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-icons"></i>
+                            <span>Extras</span>
+                        </a>
+                        <ul class="ml-menu">
+
+                            
+                            <li>
+                                <a href="../pages/arcade.html">
+                                    <i class="awesomeiconsmall fas fa-gamepad"></i>
+                                    <span>Arcade</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../pages/icons.html">
+                                    <i class="awesomeiconsmall fas fa-grin-wink"></i>
+                                    <span>Icon Database</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/newIcon.html">
+                                    <i class="awesomeiconsmall fas fa-grin-stars"></i>
+                                    <span>AWTRIXER</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-cogs"></i>
+                            <span>Settings</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li class="active">
+                                <a href="../pages/hostsettings.html">
+                                    <i class="awesomeiconsmall fas fa-server"></i>
+                                    <span>Host</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/premium.html">
+                                    <i class="awesomeiconsmall fas fa-trophy"></i>
+                                    <span>Premium</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-signal"></i>
+                            <span>Status</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../pages/host.html">
+                                    <i class="awesomeiconsmall fas fa-server"></i>
+                                    <span>Host</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/matrix.html">
+                                    <i class="awesomeiconsmall fas fa-microchip"></i>
+                                    <span>Matrix</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/log.html">
+                                    <i class="awesomeiconsmall fas fa-clipboard-list"></i>
+                                    <span>Log</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header">OTHERS</li>
+                    <li>
+                        <a href="../pages/about.html" target="_blank">
+                            <i class="awesomeicon fas fa-address-card"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/terms.html" target="_blank">
+                            <i class="awesomeicon fas fa-user-shield"></i>
+                            <span>Policies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-heart"></i>
+                            <span>Support AWTRIX</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="https://paypal.me/blueforcer" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-paypal"></i>
+                                    <span>Donate</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.patreon.com/blueforcer" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-patreon"></i>
+                                    <span>Patreon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blueforcer.de/shop/" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-shopping-basket"></i>
+                                    <span>Shop</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="awesomeicon fas fa-external-link-alt"></i>
+                            <span>Links</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="https://awtrixdocs.blueforcer.de" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-book"></i>
+                                    <span>Documentation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://forum.blueforcer.de" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-wpforms"></i>
+                                    <span>Forum</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/VUNc99B" target="_blank">
+                                    <i class="awesomeiconsmall fab fa-discord"></i>
+                                    <span>Discord</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://poeditor.com/join/project/OT89XVkSEm" target="_blank">
+                                    <i class="awesomeiconsmall fas fa-language"></i>
+                                    <span>Translation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="critical" hidden>
+                        <a href="../pages/critical.html">
+                            <i class="awesomeicon fas fa-exclamation-triangle" style="color: red;"></i>
+                            <span>Critical Errors</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2018 - 2020 <a href="https://blueforcer.de/">Blueforcer</a>
+                </div>
+                <div class="version">
+                    <b>Version: </b> <i id="serverversion">110719</i>
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+    </section>
+    <!-- #END# Left Sidebar -->
+    <!-- Right Sidebar -->
+
+    <!-- #END# Right Sidebar -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Color Pickers -->
+            <div class="row clearfix">
+
+                <div class="card col-sm-12">
+                    <div class="header">
+                        <h2>
+                            Basic Settings
+                            <small>COLOR YOUR LIFE</small>
+                        </h2>
+
+                    </div>
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <b>Boot Animation</b>
+                                        <span class="switch pull-right">
+
+                                            <label><input type="checkbox" id="bootanimation"><span
+                                                    class="lever switch-col-red"></span></label>
+                                        </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <b>Uppercase Letters</b>
+                                        <span class="switch pull-right">
+
+                                            <label><input type="checkbox" id="uppercaseletters"><span
+                                                    class="lever switch-col-cyan"></span></label>
+                                        </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <b>Rainbow Text</b>
+                                        <span class="switch pull-right">
+
+                                            <label><input type="checkbox" id="rainbow"><span
+                                                    class="lever switch-col-orange"></span></label>
+                                        </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <b>Remove Accents</b>
+                                        <span class="switch pull-right">
+
+                                            <label><input type="checkbox" id="accents"><span
+                                                    class="lever switch-col-deep-green"></span></label>
+                                        </span>
+                                    </li>
+
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <b>Verbose Log</b>
+                                        <span class="switch pull-right">
+
+                                            <label><input type="checkbox" id="verboselog"><span
+                                                    class="lever switch-col-deep-purple"></span></label>
+                                        </span>
+                                    </li>
+
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <b>Offline mode</b>
+                                        <span class="switch  pull-right">
+
+                                            <label><input type="checkbox" id="offline"><span
+                                                    class="lever switch-col-lime"></span></label>
+                                        </span>
+                                    </li>
+
+                                </ul>
+                                <div class="col-md-4">
+                                    <div>
+                                        <input type="color" id="textcolor" name="textcolor" value="#e66465">
+                                        <label for="textcolor">Textcolor</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <b>Switch Animation</b>
+                                    <select class="form-control" id="animation">
+                                        <option>None</option>
+                                        <option>Fade</option>
+                                        <option>Twinkle</option>
+                                        <option>Colorbar</option>
+                                        <option>Pull (beta)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <b>Language</b>
+                                    <select class="form-control" id="language">
+                                       
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="input-group-prepend">
+                                    <b>Rainbow Divider</b>
+                                    <input Type="number" id="rainbowmulti" min="1" max="15" placeholder="1" class="form-control">
+                                </div>
+
+                                <div class="input-group-prepend">
+                                    <b>Brightness (0-100%)</b>
+                                    <span><i id="warning" class="material-icons" data-toggle="tooltip" data-placement="top" title="A too high brightness can destroy the matrix and/or the power supply! Keep under 75% if possible" style="padding-top: 5px; color: red;" hidden>warning</i></span>
+                                    <input Type="number" id="brightness" min="1" max="100" placeholder="1" class="form-control">
+                                </div>
+
+                                <div class="input-group-prepend">
+                                    <b>App Duration (Seconds)</b>
+                                    <input Type="number" id="appduration" min="0" max="180" placeholder="1" class="form-control">
+                                </div>
+
+                                <div class="input-group-prepend">
+                                    <b>Scroll speed (Milliseconds)</b>
+                                    <input Type="number" id="scrollspeed" min="50" max="150" placeholder="1" class="form-control">
+                                </div>
+                                <div class="input-group-prepend">
+                                    <b>Update interval (Seconds)</b>
+                                    <input Type="number" id="update" min="10" max="1800" placeholder="1" class="form-control">
+                                </div>
+
+                                <div class="input-group-prepend">
+                                    <b>Volume (0-30)</b>
+                                    <input Type="number" id="volume" min="0" max="30" placeholder="1" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Communication
+                            <small>PUSH PIXELS FROM EVERYWHERE</small>
+                        </h2>
+
+                    </div>
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-md-6">
+                                <h2 class="card-inside-title">WEBSERVER</h2>
+                                <div class="row clearfix">
+                                    <div class="col-sm-12">
+
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Port</span>
+                                        </div>
+                                        <input Type="number" id="serverport" placeholder="7000" class="form-control">
+
+                                        <div class="demo-switch-title">Enable Login</div>
+                                        <div class="switch">
+                                            <label><input type="checkbox" id="weblogin"><span
+                                                    class="lever switch-col-blue"></span></label>
+                                        </div>
+
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Login Password</span>
+                                        </div>
+                                        <input Type="password" id="webpw" placeholder="awtrix" class="form-control">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="row" style="margin-left: 0px;">
+                                    <h2 class="card-inside-title pull-left">MQTT</h2>
+
+                                    <div class="switch">
+                                        <label><input type="checkbox" id="mqttclient"><span
+                                                class="lever switch-col-blue"></span></label>
+                                    </div>
+                                    <span id="dot" class="dot pull-right" style="margin-right: +15px;"></span>
+                                </div>
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Host</span>
+                                </div>
+                                <input Type="string" id="host" class="form-control">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Port</span>
+                                </div>
+                                <input Type="number" id="port" min=0 class="form-control">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">User</span>
+                                </div>
+                                <input Type="string" id="user" class="form-control">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Password</span>
+                                </div>
+                                <input Type="password" id="password" class="form-control">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Prefix</span>
+                                </div>
+                                <input Type="string" id="prefix" class="form-control">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">SSL/TLS</span>
+                                </div>
+                                <div class="switch">
+                                    <label><input type="checkbox" id="mqttssl"><span
+                                            class="lever switch-col-blue"></span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="card" id="matrixconnection">
+            <div class="header">
+                <h2>Matrix connection</h2>
+                <ul class="header-dropdown m-r--5">
+                </ul>
+            </div>
+            <div class="body" id="content2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="demo-radio-button col">
+
+                                <div class="row clearfix">
+                                    <input name="group1" type="radio" id="wifi" onClick="check(this, document.connection)" checked />
+                                    <label for="wifi">WiFi</label>
+                                </div>
+
+                                <div class="row clearfix">
+                                    <input name="group1" type="radio" id="usb" onClick="check(this, document.connection)">
+                                    <label for="usb">USB/Serial</label>
+                                    <div class="row clearfix" id="connection" hidden>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="sel1">Select Port:</label>
+                                                <select class="form-control" id="portlist">
+                                                    <option>None</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <b>Please choose your connection method.</b><br> You can connect the matrix either via WiFi or USB. If you have weak or overloaded WiFi, please connect the matrix via USB to avoid frame drops. ttyAMA0 will crash your Raspberry Pi 3 or higher. Dont use it!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="header">
+                <h2>LED Settings</h2>
+                <ul class="header-dropdown m-r--5">
+                </ul>
+            </div>
+            <div class="body" id="content2">
+
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="demo-radio-button col">
+                                <h5>Color Correction</h5>
+                                <select class="form-control show-tick" data-live-search="true" id="tempcorrection" hidden>
+                                    <option>Standard</option>
+                                    <option>Candle</option>
+                                    <option>Tungsten40W</option>
+                                    <option>Tungsten100W</option>
+                                    <option>Halogen</option>
+                                    <option>CarbonArc</option>
+                                    <option>HighNoonSun</option>
+                                    <option>DirectSunlight</option>
+                                    <option>OvercastSky</option>
+                                    <option>ClearBlueSky</option>
+                                    <option>WarmFluorescent</option>
+                                    <option>StandardFluorescent</option>
+                                    <option>CoolWhiteFluorescent</option>
+                                    <option>FullSpectrumFluorescent</option>
+                                    <option>GrowLightFluorescent</option>
+                                    <option>BlackLightFluorescent</option>
+                                    <option>MercuryVapor</option>
+                                    <option>SodiumVapor</option>
+                                    <option>MetalHalide</option>
+                                    <option>HighPressureSodium</option>
+                                    <option>UncorrectedTemperature</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                With Colorcorrection you can adjust the colors of the LEDs to get a crisp white.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="header">
+                <h2>Auto Brightness</h2>
+                <ul class="header-dropdown m-r--5">
+                </ul>
+            </div>
+            <div class="body" id="content2">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="demo-radio-button col">
+                                <div class="demo-checkbox">
+                                    <input type="checkbox" id="ldractive" class="filled-in chk-col-green" checked />
+                                    <label for="ldractive">Activate</label>
+                                </div>
+
+                                <label>Resistor</label>
+                                <div class="form-line">
+                                    <input type="number" id="resistor" class="form-control text-center" value="1000" data-rule="quantity">
+                                </div>
+                                <label>Minimum Lux</label>
+                                <div class="form-line">
+                                    <input type="number" id="minlux" class="form-control text-center" value="0" data-rule="quantity">
+                                </div>
+                                <label>Maximum Lux</label>
+                                <div class="form-line">
+                                    <input type="number" id="maxlux" class="form-control text-center" value="1000" data-rule="quantity">
+                                </div>
+                                <label>Minimum Brightness</label>
+                                <div class="form-line">
+                                    <input type="number" id="minbri" min=1 max=100 class="form-control text-center" value="10" min="0" max="100" data-rule="quantity">
+                                </div>
+                                <label>Maximum Brightness</label>
+                                <div class="form-line">
+                                    <input type="number" id="maxbri" min=1 max=100 class="form-control text-center" value="75" min="0" max="100" data-rule="quantity">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p>
+                                If you have connected an LDR (Light Dependent Resistor) to the matrix you can adjust the automatic brightness control here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="../plugins/jquery/jquery.min.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="../plugins/bootstrap/js/bootstrap.js?ver=1641453180850"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="../plugins/bootstrap-select/js/bootstrap-select.js?ver=1641453180850"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Colorpicker Js -->
+    <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Notify Plugin Js -->
+    <script src="../../plugins/bootstrap-notify/bootstrap-notify.js?ver=1641453180850"></script>
+
+    <!-- Input Mask Plugin Js -->
+    <script src="../plugins/jquery-inputmask/jquery.inputmask.bundle.js?ver=1641453180850"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="../plugins/multi-select/js/jquery.multi-select.js?ver=1641453180850"></script>
+
+    <!-- Jquery Spinner Plugin Js -->
+    <script src="../plugins/jquery-spinner/js/jquery.spinner.js?ver=1641453180850"></script>
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.js?ver=1641453180850"></script>
+
+    <!-- noUISlider Plugin Js -->
+    <script src="../plugins/nouislider/nouislider.js?ver=1641453180850"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../plugins/node-waves/waves.js?ver=1641453180850"></script>
+
+    <!-- SweetAlert Plugin Js -->
+    <script src="../js/sweetalert.min.js?ver=1641453180850"></script>
+    <script src="../js/dialogs.js?ver=1641453180850"></script>
+    <!-- Custom Js -->
+    <script src="../js/admin.js?ver=1641453180850"></script>
+
+    <script src="../js/pages/forms/advanced-form-elements.js?ver=1641453180850"></script>
+
+    <script src="../js/notifications.js?ver=1641453180850"></script>
+    <!-- Demo Js -->
+    <script src="../js/others.js?ver=1641453180850"></script>
+
+    <script src="../js/Settings.js?ver=1641453180850"></script>
+
+    <script type="text/javascript">
+        function setSlider(name, val) {
+            var slider = document.getElementById(name);
+            slider.noUiSlider.set(val);
+        }
+
+        function getSlider(name) {
+            var slider = document.getElementById(name);
+            return slider.noUiSlider.get();
+        }
+
+
+        $(document).ready(function() {
+            console.log("ready!");
+            awtrix_connect("/settings/ws");
+        });
+
+
+        function ShowMessage(titel, body, btn, link) {
+            $('#alertModalLabel').html(titel);
+            $('#alertModalBody').html(body);
+            if (typeof btn !== "undefined") {
+                $('#goToButton').html(btn);
+                document.getElementById('goToButton').href = link;
+            } else {
+                $('#goToButton').hide();
+            }
+            $('#mdModal').modal('show')
+        };
+    </script>
+
+
+
+    <script language="JavaScript">
+        function addOption(value) {
+            console.log("ADDING " + value);
+            $('#portlist').append($('<option>', {
+                value: value,
+                text: value
+            }));
+        }
+
+        function addLanguage(value) {
+            $('#language').append($('<option>', {
+                value: value,
+                text: value
+            }));
+        }
+
+        function emptyLanguage() {
+            $('#language').empty();
+
+        }
+
+        function getPort() {
+            return $('#portlist').find(":selected").text();
+        }
+
+        function emptyPort() {
+
+            $('#portlist').empty();
+            $('#portlist').append($('<option>', {
+                value: 'None',
+                text: 'None'
+            }));
+        }
+
+
+        function check(checkbox, senden) {
+            var x = document.getElementById("connection");
+            if (document.getElementById("usb").checked == true) {
+                $("#connection").show();
+
+
+            }
+            if (document.getElementById("wifi").checked == true) {
+                $("#connection").hide();
+            }
+
+        }
+        //-->
+    </script>
+
+</body>
+
+</html>
