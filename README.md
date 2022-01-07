@@ -1,8 +1,14 @@
 # Awtrix
 
+- 官网 https://awtrixdocs.blueforcer.de/
 - 参考 UP 三三三三三文啊 视频：https://www.bilibili.com/video/BV1764y1f7pc
 - 教程 https://bbs.iobroker.cn/t/topic/3888
-- 官网 https://awtrixdocs.blueforcer.de/
+
+## 成品展示
+
+B 站演示地址：
+
+
 
 ## PCB
 
@@ -38,6 +44,20 @@
 
 ![](/images/hj_1.jpg)
 
+## 按键
+
+左按键
+
+![](/images/l.jpg)
+
+中间按键
+
+![](/images/m.jpg)
+
+右按键
+
+![](/images/r.jpg)
+
 ## 组装
 
 1个 Mini MP3 Player模块
@@ -62,6 +82,16 @@
 
 ![](/images/6.png)
 
+## 烧录
+
+​	**1.** 启动 **ESP8266Flasher.exe** ，在“Config”选项卡中打开固件（点击齿轮选择固件） 
+
+​	**2.** 如果未自动检测到，请返回“操作”选项卡并设置正确的 Com-Port。 
+
+​	**3.** 单击“Flash”并等待该过程完成且左下角出现绿色复选标记。 
+
+![](/images/gj.jpg)
+
 ## 无线
 
 首先给awtrix通电，没有连接到wifi的情况下会进入热点模式，使用手机或电脑搜索wifi，找到AWTRIX Controller这个ssid并加入，密码为awtrixxx
@@ -76,9 +106,12 @@
 
 ## 服务器
 
-安装JAVA环境后在CMD中运行如下命令（先`cd`到指定到 awtrix.jar 所在的文件夹下），执行`Host`文件夹的文件，开启服务器
+安装JAVA环境后在 CMD 中运行如下命令（先`cd`到指定到 awtrix.jar 所在的文件夹下），执行`Host`文件夹的文件，开启服务器
 
-```c++
-java -jar awtrix.jar
-```
+`java -jar awtrix.jar`
 
+![](/images/fwq.jpg)
+
+`http:// [HOST-IP]:7000/` ： HOST-IP 主机本地连接的 IP，IP获取 CMD 输入 ipconfig
+
+![](/images/zx.jpg)
