@@ -6,7 +6,7 @@
 
 ## 成品展示
 
-B 站演示地址：
+B 站演示地址：  https://b23.tv/A57vieg
 
 这是还没有加外壳，3D打印外壳很贵很贵，想自己用木板做
 
@@ -17,6 +17,22 @@ B 站演示地址：
 ![](/images/13.jpg)
 
 ![](/images/15.jpg)
+
+外壳纯手工制作，买的胡桃木的木板
+
+![](/images/1.1.jpg)
+
+![](/images/1.2.jpg)
+
+![](/images/1.3.jpg)
+
+![](/images/1.4.jpg)
+
+![](/images/77.jpg)
+
+![](/images/88.jpg)
+
+![](/images/99.jpg)
 
 ## PCB
 
